@@ -29,9 +29,9 @@ body {
 /* nav */
 .nav {
   background-color: var(--main-red);
-  padding: 0px 60px;
+  padding: 0px 70px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -41,6 +41,10 @@ body {
   background-color: var(--main-red);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
+}
+
+.nav img{
+  width: 120px;
 }
 
 .nav ul {
@@ -69,9 +73,18 @@ body {
   color: var(--main-white);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .nav {
     justify-content: center;
+  }
+  .nav img{
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .nav{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
